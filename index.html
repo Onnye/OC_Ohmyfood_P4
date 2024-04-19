@@ -6,7 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohmyfood</title>
+  <title>Ohmyfood - Réservez le menu qui vous convient sur Paris</title>
+  <meta name="description"
+    content="Réservez le menu qui vous convient sur Paris avec Ohmyfood. Découvrez des restaurants d’exception, sélectionnés par nos soins.">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- Importations CSS -->
-  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <link rel="stylesheet" href="/assets/CSS/style.css">
 
 </head>
 
@@ -28,11 +30,15 @@
 
   <!--*************** Header ***************-->
   <header>
-    <a href="#">
-      <img class="logo" src="./assets/images/logo/ohmyfood.png" alt="Logo du site ohmyfood">
+    <a href="#" title="Retour à la page d'accueil">
+      <img class="logo" src="/assets/images/logo/ohmyfood.png" alt="Logo du site Ohmyfood">
     </a>
-    <div class="location">
-      <i class="fa-solid fa-location-dot"></i>Paris, Belleville
+    <div class="locate">
+      <div class="locate__content">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" name="city" id="city" placeholder="Paris, Belleville"
+          aria-label="Saisissez la ville de votre choix">
+      </div>
     </div>
   </header>
 
@@ -49,13 +55,15 @@
       <h2>Fonctionnement</h2>
       <ol>
         <li>
-          <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a>
+          <a href="#" aria-label="Choisissez un restaurant"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez
+            un
+            restaurant</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a>
+          <a href="#" aria-label="Composez votre menu"><i class="fa-solid fa-list"></i>Composez votre menu</a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
+          <a href="#" aria-label="Dégustez au restaurant"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
         </li>
       </ol>
     </section>
@@ -66,9 +74,9 @@
       <div>
         <!--*** Card La palette du goût ***-->
         <article>
-          <a href="./restaurants/palette.html">
-            <img src="assets/images/restaurants/la_palette_du_gout.jpg"
-              alt="Photo d'un plat du restaurant La palette du gout">
+          <a href="/restaurants/palette.html" aria-label="Découvrez La palette du goût">
+            <img src="/assets/images/restaurants/la_palette_du_gout.jpg"
+              alt="Photo d'un plat du restaurant La palette du goût">
             <span>Nouveau</span>
             <div>
               <div>
@@ -84,7 +92,7 @@
 
         <!--*** Card La note enchantée ***-->
         <article>
-          <a href="./restaurants/note.html">
+          <a href="/restaurants/note.html" aria-label="Découvrez La note enchantée">
             <img src="assets/images/restaurants/la_note_enchantee.jpg"
               alt="Photo d'un plat du restaurant La note enchantée">
             <span>Nouveau</span>
@@ -102,7 +110,7 @@
 
         <!--*** Card À la française ***-->
         <article>
-          <a href="./restaurants/francaise.html">
+          <a href="/restaurants/francaise.html" aria-label="Découvrez À la française">
             <img src="assets/images/restaurants/a_la_francaise.jpg" alt="Photo d'un plat du restaurant À la française">
             <span>Nouveau</span>
             <div>
@@ -119,7 +127,7 @@
 
         <!--*** Card Le délice des sens ***-->
         <article>
-          <a href="./restaurants/delice.html">
+          <a href="/restaurants/delice.html" aria-label="Découvrez Le délice des sens">
             <img src="assets/images/restaurants/le_delice_des_sens.jpg"
               alt="Photo d'un plat du restaurant Le délice des sens">
             <span>Nouveau</span>
@@ -144,17 +152,13 @@
   <footer>
     <h2>ohmyfood</h2>
     <nav>
-      <a href="#">
-        <i class="fa-solid fa-utensils"></i>
-        Proposer un restaurant</a>
-      <a href="#">
-        <i class="fa-solid fa-handshake-angle"></i>
-        Devenir Partenaire</a>
-      <a href="#">Mentions Légales</a>
-      <a href="mailto:contact@ohmyfood.com">Contact</a>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir Partenaire</a></li>
+        <li><a href="#">Mentions Légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+      </ul>
     </nav>
-
-  </footer>
   </footer>
 
 </body>
