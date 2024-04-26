@@ -1,0 +1,30 @@
+/*========== Imports ==========*/
+@import "./abstracts/variables.scss";
+@import "./base/typography.scss";
+@import "./layout/header.scss";
+
+/*========== General ==========*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  border: none;
+}

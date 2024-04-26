@@ -1,0 +1,42 @@
+/*=============== HEADER ===============*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 63px;
+    padding: 14px 0px 13px 0px;
+  }
+}
+/* Location */
+.location {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-location;
+
+  // Shadow - Top
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
+    // Shadow - Bottom
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .location__content {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+
+    input {
+      all: unset;
+      width: 60%;
+      background-color: $background-location;
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+      }
+    }
+  }
+}
