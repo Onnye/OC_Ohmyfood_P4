@@ -1,7 +1,8 @@
 /*========== Imports ==========*/
 @import "./abstracts/variables.scss";
-@import "./base/typography.scss";
+@import "./abstracts/mixins.scss";
 @import "./layout/header.scss";
+@import "./components/button-style.scss";
 
 /*========== General ==========*/
 * {
@@ -13,6 +14,7 @@
 body {
   background: white;
   width: 100%;
+  font-family: $main-font;
 }
 
 ul {
@@ -27,4 +29,24 @@ a {
 button,
 input {
   border: none;
+}
+
+/*========== Reservation section ==========*/
+
+.reservation {
+  background: $background;
+  @include flex(column);
+  padding: 0 0 60px 0;
+
+  .reservation__title {
+    display: flex;
+    @include mixin-h1;
+  }
+
+  .reservation__content {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 5px 30px 5px;
+  }
 }
