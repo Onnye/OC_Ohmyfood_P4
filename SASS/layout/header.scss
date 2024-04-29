@@ -1,42 +1,25 @@
 /*=============== HEADER ===============*/
 header {
-  @include flex(
-    $direction: column,
-    $justify: center,
-    $align: center,
-    $text: center
-  );
+  @include flex(column, center, center, center);
 
   img {
     height: 63px;
-    padding: 14px 0px 13px 0px;
+    padding: 14px 0;
   }
 }
-/* Location */
+
 .location {
-  @include flex(
-    $direction: row,
-    $justify: center,
-    $align: center,
-    $text: center
-  );
+  @include flex(row, center, center, center);
   width: 100%;
   height: 50px;
   background-color: $background-location;
 
-  // Shadow - Top
+  // Shadow
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
-    // Shadow - Bottom
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   .location__content {
-    @include flex(
-      $direction: row,
-      $justify: center,
-      $align: center,
-      $text: center,
-      $gap: 17px
-    );
+    @include flex(row, center, center, center, 17px);
 
     input {
       all: unset;

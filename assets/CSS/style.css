@@ -16,10 +16,9 @@ header {
 }
 header img {
   height: 63px;
-  padding: 14px 0px 13px 0px;
+  padding: 14px 0;
 }
 
-/* Location */
 .location {
   display: flex;
   flex-direction: row;
