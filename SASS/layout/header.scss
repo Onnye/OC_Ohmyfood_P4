@@ -1,6 +1,11 @@
 /*=============== HEADER ===============*/
 header {
-  @include flex(column);
+  @include flex(
+    $direction: column,
+    $justify: center,
+    $align: center,
+    $text: center
+  );
 
   img {
     height: 63px;
@@ -9,7 +14,12 @@ header {
 }
 /* Location */
 .location {
-  @include flex;
+  @include flex(
+    $direction: row,
+    $justify: center,
+    $align: center,
+    $text: center
+  );
   width: 100%;
   height: 50px;
   background-color: $background-location;
@@ -20,8 +30,13 @@ header {
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   .location__content {
-    @include flex(row);
-    gap: 17px;
+    @include flex(
+      $direction: row,
+      $justify: center,
+      $align: center,
+      $text: center,
+      $gap: 17px
+    );
 
     input {
       all: unset;

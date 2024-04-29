@@ -31,12 +31,19 @@
 
 /*========== Style Format ==========*/
 
-@mixin flex($direction: row, $justify: center, $align: center, $text: center) {
+@mixin flex(
+  $direction: initial,
+  $justify: initial,
+  $align: initial,
+  $text: initial,
+  $gap: initial
+) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
   text-align: $text;
+  gap: $gap;
 }
 
 /*========== Color Format ==========*/

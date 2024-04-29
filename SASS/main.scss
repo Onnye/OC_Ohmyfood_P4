@@ -3,6 +3,7 @@
 @import "./abstracts/mixins.scss";
 @import "./layout/header.scss";
 @import "./components/button-style.scss";
+@import "./components/list-style.scss";
 
 /*========== General ==========*/
 * {
@@ -31,22 +32,38 @@ input {
   border: none;
 }
 
-/*========== Reservation section ==========*/
-
+/*========== Hero - section ==========*/
 .reservation {
   background: $background;
-  @include flex(column);
+  @include flex($direction: column, $justify: center, $align: center);
   padding: 0 0 60px 0;
 
   .reservation__title {
-    display: flex;
+    @include flex($text: center);
     @include mixin-h1;
   }
 
   .reservation__content {
+    @include flex($text: center);
     font-family: "Roboto";
     font-weight: 300;
     font-size: 18px;
     margin: 0 5px 30px 5px;
+  }
+}
+
+/*========== Fonctionnement - section ==========*/
+
+.guide {
+  @include flex($direction: column, $gap: 26px);
+  padding: 48px 20px 68px 20px;
+
+  &__title {
+    @include mixin-h2;
+  }
+
+  &__list {
+    @include flex($direction: column, $gap: 25px);
+    font-weight: 500;
   }
 }

@@ -1,0 +1,35 @@
+/*========== List Guide ==========*/
+.guide__item {
+  @include flex($align: center);
+  counter-increment: nbButton;
+  width: 100%;
+
+  &:before {
+    @include flex($justify: center, $align: center);
+    content: counter(nbButton);
+    z-index: +1;
+    background-color: $color--primary;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    color: #7e7e7e;
+    &--purple {
+      color: $color--primary;
+    }
+  }
+
+  &__content {
+    margin-left: -10px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 24px;
+    @include flex($align: center, $gap: 23px);
+    background-color: $background;
+    height: 72.38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  }
+}
