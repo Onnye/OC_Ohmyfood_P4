@@ -1,0 +1,43 @@
+.card {
+  @include flex($direction: column, $gap: 16px);
+  height: 251px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+  &--new {
+    &:before {
+      content: "Nouveau";
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      width: 80px;
+      height: 29px;
+      line-height: 29px;
+      text-align: center;
+      background-color: $color--tertiary;
+      color: $color--new-font;
+      border-radius: 2px;
+    }
+  }
+
+  &__image {
+    border-radius: 15px 15px 0 0;
+    height: calc(251px - 77px);
+    object-fit: cover;
+  }
+
+  &__content {
+    @include flex($direction: column, $gap: 5px);
+    padding: 0 25px 0 13px;
+  }
+
+  //positionning heart icon
+  .fa-heart {
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    right: 23px;
+    bottom: 32px;
+  }
+}

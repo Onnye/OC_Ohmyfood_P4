@@ -123,6 +123,53 @@ header img {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: 16px;
+  height: 251px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card--new:before {
+  content: "Nouveau";
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 80px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 2px;
+}
+.card__image {
+  border-radius: 15px 15px 0 0;
+  height: 174px;
+  object-fit: cover;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: 5px;
+  padding: 0 25px 0 13px;
+}
+.card .fa-heart {
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  right: 23px;
+  bottom: 32px;
+}
+
 /*========== General ==========*/
 * {
   box-sizing: border-box;
@@ -211,6 +258,40 @@ input {
   text-align: initial;
   gap: 25px;
   font-weight: 500;
+}
+
+/*========== Restaurant - section ==========*/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: initial;
+  background-color: #f6f6f6;
+  padding: 48px 20px 48px 20px;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+.restaurants__cards-container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: initial;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.restaurants__card-link {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
