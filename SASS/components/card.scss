@@ -18,6 +18,7 @@
       background-color: $color--tertiary;
       color: $color--new-font;
       border-radius: 2px;
+      font-weight: 500;
     }
   }
 
@@ -34,10 +35,9 @@
 
   //positionning heart icon
   .fa-heart {
-    width: 22px;
-    height: 21px;
     position: absolute;
     right: 23px;
     bottom: 32px;
+    font-size: 21px;
   }
 }
