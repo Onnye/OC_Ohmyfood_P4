@@ -51,6 +51,54 @@ header img {
   color: #000;
 }
 
+footer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: initial;
+  text-align: initial;
+  gap: initial;
+  background-color: #353535;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: 16px;
+  width: 100%;
+  padding: 22px 25px;
+}
+.footer__title {
+  height: 27px;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  text-align: initial;
+  gap: 7px;
+}
+.footer__link {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: center;
+  text-align: initial;
+  gap: 10px;
+  font-weight: 500;
+}
+.footer__link--alt-size {
+  font-weight: 400;
+}
+
 .button-style {
   display: flex;
   flex-direction: initial;

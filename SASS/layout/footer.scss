@@ -1,0 +1,31 @@
+footer {
+  @include flex($justify: center);
+  background-color: $color-background-footer;
+  color: $color-text-footer;
+}
+
+.footer {
+  @include flex($direction: column, $gap: 16px);
+  width: 100%;
+  padding: 22px 25px;
+
+  &__title {
+    height: 27px;
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include flex($direction: column, $gap: 7px);
+  }
+
+  &__link {
+    @include flex($align: center, $gap: 10px);
+    font-weight: 500;
+
+    &--alt-size {
+      font-weight: 400;
+    }
+  }
+}
