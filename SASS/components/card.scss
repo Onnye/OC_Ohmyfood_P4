@@ -31,13 +31,55 @@
   &__content {
     @include flex($direction: column, $gap: 5px);
     padding: 0 25px 0 13px;
+    position: relative; // Heart positioning
   }
 
-  //positionning heart icon
-  .fa-heart {
+  // Heart
+  .heart-label {
     position: absolute;
+    bottom: 16px;
     right: 23px;
-    bottom: 32px;
-    font-size: 21px;
+    cursor: pointer;
+
+    .fa-heart {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .heart--regular {
+      display: flex;
+      font-size: 22px;
+      position: absolute;
+      transform-origin: center bottom;
+      transition: opacity 600ms;
+      opacity: 1;
+    }
+
+    .heart--solid {
+      display: flex;
+      font-size: 22px;
+      background-image: linear-gradient(
+        to top,
+        $color--secondary,
+        $color--primary
+      );
+      background-clip: text;
+
+      color: transparent;
+
+      opacity: 0;
+    }
+  }
+
+  .heart-checkbox {
+    display: none;
+  }
+
+  input:checked + label .heart--regular {
+    opacity: 0;
+  }
+
+  input:checked + label .heart--solid {
+    opacity: 1;
   }
 }

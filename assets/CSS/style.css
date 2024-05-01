@@ -210,12 +210,42 @@ footer {
   text-align: initial;
   gap: 5px;
   padding: 0 25px 0 13px;
+  position: relative;
 }
-.card .fa-heart {
+.card .heart-label {
   position: absolute;
+  bottom: 16px;
   right: 23px;
-  bottom: 32px;
-  font-size: 21px;
+  cursor: pointer;
+}
+.card .heart-label .fa-heart {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card .heart-label .heart--regular {
+  display: flex;
+  font-size: 22px;
+  position: absolute;
+  transform-origin: center bottom;
+  transition: opacity 600ms;
+  opacity: 1;
+}
+.card .heart-label .heart--solid {
+  display: flex;
+  font-size: 22px;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.card .heart-checkbox {
+  display: none;
+}
+.card input:checked + label .heart--regular {
+  opacity: 0;
+}
+.card input:checked + label .heart--solid {
+  opacity: 1;
 }
 
 /*========== General ==========*/
