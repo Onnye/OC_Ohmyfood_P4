@@ -1,0 +1,57 @@
+.loader-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10000;
+  animation: loader-background 0.01s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.75s;
+}
+
+.loader-spinner-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 100px;
+  background: linear-gradient(to right, $color--primary, $color--secondary);
+  background-clip: text;
+  color: transparent;
+  animation: rotate 2s linear infinite, fadeInOut 3s ease-in-out infinite; // Ajoute une animation de fondu
+}
+
+.loader-spinner-logo p {
+  margin-top: 10px;
+  font-size: 50px;
+  color: black;
+}
+
+@keyframes loader-background {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -9999;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInOut {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
