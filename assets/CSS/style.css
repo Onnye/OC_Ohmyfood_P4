@@ -5,10 +5,14 @@
 /*========== Typography ==========*/
 /*========== Style Format ==========*/
 /*========== Color Format ==========*/
+/*========== Media queries ==========*/
 .loader-position {
   display: flex;
+  flex-direction: initial;
   justify-content: center;
   align-items: center;
+  text-align: initial;
+  gap: initial;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -22,10 +26,13 @@
 .loader-spinner-logo {
   display: flex;
   flex-direction: column;
+  justify-content: initial;
   align-items: center;
+  text-align: initial;
+  gap: initial;
   padding: 10px;
   font-size: 100px;
-  background: linear-gradient(to right, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   background-clip: text;
   color: transparent;
   animation: rotate 2s linear infinite, fadeInOut 3s ease-in-out infinite;
@@ -84,6 +91,12 @@ header img {
   height: 50px;
   background-color: #eaeaea;
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+  }
 }
 .location .location__content {
   display: flex;
@@ -187,6 +200,13 @@ footer {
   gap: initial;
   counter-increment: nbButton;
   width: 100%;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .guide__item {
+    width: 100%;
+    max-width: 335px;
+  }
 }
 .guide__item:before {
   display: flex;
@@ -342,6 +362,12 @@ input {
   text-align: initial;
   gap: initial;
   padding: 0 0 60px 0;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .reservation {
+    padding: 0 0 30px 0;
+  }
 }
 .reservation .reservation__title {
   display: flex;
@@ -355,6 +381,12 @@ input {
   font-weight: 700;
   color: #000;
   padding: 30px 50px 18px 50px;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .reservation .reservation__title {
+    font-size: 40px;
+  }
 }
 .reservation .reservation__content {
   display: flex;
@@ -378,12 +410,30 @@ input {
   text-align: initial;
   gap: 26px;
   padding: 48px 20px 68px 20px;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    text-align: initial;
+    gap: 25px;
+  }
 }
 .guide__title {
   font-size: 24px;
   font-family: "Roboto";
   font-weight: 700;
   color: #000;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .guide__title {
+    width: 100%;
+    max-width: 1053px;
+  }
 }
 .guide__list {
   display: flex;
@@ -393,6 +443,18 @@ input {
   text-align: initial;
   gap: 25px;
   font-weight: 500;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .guide__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+    text-align: initial;
+    gap: 24px;
+    width: 100%;
+  }
 }
 
 /*========== Restaurant - section ==========*/

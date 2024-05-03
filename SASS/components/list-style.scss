@@ -3,6 +3,11 @@
   @include flex($align: center);
   counter-increment: nbButton;
   width: 100%;
+  /* Media Queries */
+  @include desktop {
+    width: 100%;
+    max-width: 335px;
+  }
 
   &:before {
     @include flex($justify: center, $align: center);

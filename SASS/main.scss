@@ -40,10 +40,18 @@ input {
   background: $background;
   @include flex($direction: column, $justify: center, $align: center);
   padding: 0 0 60px 0;
+  /* Media Queries */
+  @include desktop {
+    padding: 0 0 30px 0;
+  }
 
   .reservation__title {
     @include flex($text: center);
     @include mixin-h1;
+    /* Media Queries */
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   .reservation__content {
@@ -56,18 +64,31 @@ input {
 }
 
 /*========== Fonctionnement - section ==========*/
-
 .guide {
   @include flex($direction: column, $gap: 26px);
   padding: 48px 20px 68px 20px;
+  /* Media Queries */
+  @include desktop {
+    @include flex($direction: column, $align: center, $gap: 25px);
+  }
 
   &__title {
     @include mixin-h2;
+    /* Media Queries */
+    @include desktop {
+      width: 100%;
+      max-width: calc(3 * 335px + 2 * 24px);
+    }
   }
 
   &__list {
     @include flex($direction: column, $gap: 25px);
     font-weight: 500;
+    /* Media Queries */
+    @include desktop {
+      @include flex($direction: row, $justify: center, $gap: 24px);
+      width: calc(100%);
+    }
   }
 }
 
