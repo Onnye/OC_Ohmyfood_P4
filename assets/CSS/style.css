@@ -118,32 +118,61 @@ header img {
   color: #000;
 }
 
-footer {
+.footer {
   display: flex;
-  flex-direction: initial;
+  flex-direction: column;
   justify-content: center;
   align-items: initial;
   text-align: initial;
   gap: initial;
-  background-color: #353535;
   color: white;
+  padding: 22px 25px 22px 25px;
+  background: #353535;
 }
-
-.footer {
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: initial;
+    gap: 40px;
+    height: 114px;
+  }
+}
+.footer .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: initial;
   justify-content: initial;
-  align-items: initial;
+  align-items: center;
   text-align: initial;
-  gap: 16px;
-  width: 100%;
-  padding: 22px 25px;
-}
-.footer__title {
-  height: 27px;
+  gap: initial;
+  margin-bottom: 16px;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
-  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .footer .logo {
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+  }
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .footer ul {
+    flex-direction: row;
+  }
+}
+.footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .footer__list {
   display: flex;
@@ -164,6 +193,21 @@ footer {
 }
 .footer__link--alt-size {
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .footer .item1 {
+    order: 3;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .item2 {
+    order: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .item3 {
+    order: 2;
+  }
 }
 
 .button-style {

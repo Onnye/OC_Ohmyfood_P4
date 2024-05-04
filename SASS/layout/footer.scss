@@ -1,19 +1,47 @@
-footer {
-  @include flex($justify: center);
-  background-color: $color-background-footer;
-  color: $color-text-footer;
-}
-
 .footer {
-  @include flex($direction: column, $gap: 16px);
-  width: 100%;
-  padding: 22px 25px;
+  @include flex($direction: column, $justify: center);
+  color: $color-text-footer;
+  padding: 22px 25px 22px 25px;
+  background: $color-background-footer;
 
-  &__title {
-    height: 27px;
+  @include desktop {
+    @include flex(
+      $direction: row,
+      $justify: flex-end,
+      $align: flex-end,
+      $gap: 40px
+    );
+    height: 114px;
+  }
+
+  .logo {
+    @include flex($align: center);
+    margin-bottom: 16px;
     font-family: $title-font;
     font-size: 18px;
-    font-weight: 400;
+
+    @include desktop {
+      margin-left: 60px;
+      margin-bottom: 10px;
+      margin-right: 40px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 
   &__list {
@@ -26,6 +54,24 @@ footer {
 
     &--alt-size {
       font-weight: 400;
+    }
+  }
+
+  .item1 {
+    @include desktop {
+      order: 3;
+    }
+  }
+
+  .item2 {
+    @include desktop {
+      order: 1;
+    }
+  }
+
+  .item3 {
+    @include desktop {
+      order: 2;
     }
   }
 }
