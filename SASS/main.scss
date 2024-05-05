@@ -94,24 +94,42 @@ input {
 
 /*========== Restaurant - section ==========*/
 .restaurants {
-  @include flex(column);
+  @include flex(column, center, center, 30px);
   background-color: $background;
   padding: 48px 20px 48px 20px;
 
+  @include desktop {
+    padding-top: 30px;
+  }
+
   &__title {
+    padding-left: 3px;
+    width: 100%;
+    max-width: 1080px;
     @include mixin-h2;
     margin-bottom: 20px;
   }
 
   &__cards-container {
-    @include flex;
+    @include flex(row, center, center, 18px);
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1080px;
+
+    @include desktop {
+      justify-content: space-between;
+      gap: 50px;
+    }
   }
 
   &__card-link {
     width: 100%;
     position: relative; // Badge "Nouveau"
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+
+    @include desktop {
+      width: calc((100% - 50px) / 2);
+      max-width: 490px;
+    }
   }
 }
