@@ -416,7 +416,7 @@ input {
 }
 @media (min-width: 1024px) {
   .reservation {
-    padding: 0 0 30px 0;
+    padding: 0 0 35px 0;
   }
 }
 .reservation .reservation__title {
@@ -436,6 +436,7 @@ input {
 @media (min-width: 1024px) {
   .reservation .reservation__title {
     font-size: 40px;
+    padding-bottom: 30px;
   }
 }
 .reservation .reservation__content {
@@ -470,6 +471,7 @@ input {
     align-items: center;
     text-align: initial;
     gap: 25px;
+    padding-bottom: 55px;
   }
 }
 .guide__title {
@@ -482,7 +484,7 @@ input {
 @media (min-width: 1024px) {
   .guide__title {
     width: 100%;
-    max-width: 1053px;
+    max-width: 1080px;
   }
 }
 .guide__list {
@@ -503,7 +505,7 @@ input {
     align-items: initial;
     text-align: initial;
     gap: 24px;
-    width: 100%;
+    width: calc(100% - 50px);
   }
 }
 
@@ -521,10 +523,10 @@ input {
 @media (min-width: 1024px) {
   .restaurants {
     padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 .restaurants__title {
-  padding-left: 3px;
   width: 100%;
   max-width: 1080px;
   font-size: 24px;
@@ -532,6 +534,12 @@ input {
   font-weight: 700;
   color: #000;
   margin-bottom: 20px;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  .restaurants__title {
+    padding-bottom: 10px;
+  }
 }
 .restaurants__cards-container {
   display: flex;
@@ -547,7 +555,7 @@ input {
 @media (min-width: 1024px) {
   .restaurants__cards-container {
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
   }
 }
 .restaurants__card-link {

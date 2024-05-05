@@ -42,7 +42,7 @@ input {
   padding: 0 0 60px 0;
   /* Media Queries */
   @include desktop {
-    padding: 0 0 30px 0;
+    padding: 0 0 35px 0;
   }
 
   .reservation__title {
@@ -51,6 +51,7 @@ input {
     /* Media Queries */
     @include desktop {
       font-size: 40px;
+      padding-bottom: 30px;
     }
   }
 
@@ -70,6 +71,7 @@ input {
   /* Media Queries */
   @include desktop {
     @include flex($direction: column, $align: center, $gap: 25px);
+    padding-bottom: 55px;
   }
 
   &__title {
@@ -77,7 +79,7 @@ input {
     /* Media Queries */
     @include desktop {
       width: 100%;
-      max-width: calc(3 * 335px + 2 * 24px);
+      max-width: 1080px;
     }
   }
 
@@ -87,7 +89,7 @@ input {
     /* Media Queries */
     @include desktop {
       @include flex($direction: row, $justify: center, $gap: 24px);
-      width: calc(100%);
+      width: calc(100% - 50px); // Retire 50px de l'espace
     }
   }
 }
@@ -100,14 +102,18 @@ input {
 
   @include desktop {
     padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   &__title {
-    padding-left: 3px;
     width: 100%;
     max-width: 1080px;
     @include mixin-h2;
     margin-bottom: 20px;
+    /* Media Queries */
+    @include desktop {
+      padding-bottom: 10px;
+    }
   }
 
   &__cards-container {
@@ -118,7 +124,7 @@ input {
 
     @include desktop {
       justify-content: space-between;
-      gap: 50px;
+      gap: 30px;
     }
   }
 
