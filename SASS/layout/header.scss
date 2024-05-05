@@ -3,8 +3,13 @@ header {
   @include flex(column, center, center, center);
 
   img {
-    height: 63px;
+    height: 66px;
     padding: 14px 0;
+
+    /* Media Queries */
+    @include desktop {
+      margin: 15px 0;
+    }
   }
 }
 
@@ -17,18 +22,20 @@ header {
   // Shadow
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
   /* Media Queries */
   @include desktop {
     box-shadow: none;
   }
 
-  .location__content {
+  &__content {
     @include flex(row, center, center, center, 17px);
 
     input {
       all: unset;
       width: 60%;
       background-color: $background-location;
+
       &::placeholder {
         @include mixin-text;
       }

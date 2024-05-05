@@ -76,8 +76,14 @@ header {
   gap: initial;
 }
 header img {
-  height: 63px;
+  height: 66px;
   padding: 14px 0;
+  /* Media Queries */
+}
+@media (min-width: 1024px) {
+  header img {
+    margin: 15px 0;
+  }
 }
 
 .location {
@@ -98,7 +104,7 @@ header img {
     box-shadow: none;
   }
 }
-.location .location__content {
+.location__content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,12 +112,12 @@ header img {
   text-align: center;
   gap: 17px;
 }
-.location .location__content input {
+.location__content input {
   all: unset;
   width: 60%;
   background-color: #eaeaea;
 }
-.location .location__content input::placeholder {
+.location__content input::placeholder {
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 500;
@@ -505,14 +511,22 @@ input {
 .restaurants {
   display: flex;
   flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  text-align: initial;
+  justify-content: center;
+  align-items: center;
+  text-align: 30px;
   gap: initial;
   background-color: #f6f6f6;
   padding: 48px 20px 48px 20px;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    padding-top: 30px;
+  }
+}
 .restaurants__title {
+  padding-left: 3px;
+  width: 100%;
+  max-width: 1080px;
   font-size: 24px;
   font-family: "Roboto";
   font-weight: 700;
@@ -521,18 +535,31 @@ input {
 }
 .restaurants__cards-container {
   display: flex;
-  flex-direction: initial;
-  justify-content: initial;
-  align-items: initial;
-  text-align: initial;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: 18px;
   gap: initial;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1080px;
+}
+@media (min-width: 1024px) {
+  .restaurants__cards-container {
+    justify-content: space-between;
+    gap: 50px;
+  }
 }
 .restaurants__card-link {
   width: 100%;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants__card-link {
+    width: calc((100% - 50px) / 2);
+    max-width: 490px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
