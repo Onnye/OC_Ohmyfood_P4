@@ -42,3 +42,16 @@ header {
     }
   }
 }
+
+/*=============== HEADER - Restaurants Pages ===============*/
+header {
+  position: relative;
+
+  .return {
+    position: absolute;
+    left: 2%;
+    i {
+      font-size: 25px;
+    }
+  }
+}

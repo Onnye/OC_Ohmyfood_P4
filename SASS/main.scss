@@ -7,6 +7,7 @@
 @import "./components/button-style.scss";
 @import "./components/list-style.scss";
 @import "./components/card.scss";
+@import "./pages/restaurant.scss";
 
 /*========== General ==========*/
 * {
@@ -88,8 +89,8 @@ input {
     font-weight: 500;
     /* Media Queries */
     @include desktop {
-      @include flex($direction: row, $justify: center, $gap: 24px);
-      width: calc(100% - 50px); // Retire 50px de l'espace
+      @include flex($direction: row, $justify: center, $gap: 40px);
+      width: 100%;
     }
   }
 }

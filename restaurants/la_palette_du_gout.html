@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--*************** Head - meta - link ***************-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohmyfood - Réservez le menu qui vous convient sur Paris</title>
+  <meta name="description"
+    content="Réservez le menu qui vous convient sur Paris avec Ohmyfood. Découvrez des restaurants d’exception, sélectionnés par nos soins.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Importations CSS -->
+  <link rel="stylesheet" href="../assets/CSS/style.css">
+</head>
+
+<!--*************** Body ***************-->
+
+<body>
+
+  <!--*************** Header ***************-->
+  <header>
+    <a href="../index.html" class="return"><i class="fa-solid fa-arrow-left"></i></a>
+    <img class="logo" src="../assets/images/logo/ohmyfood.png" alt="Logo du site Ohmyfood">
+  </header>
+
+  <!--*************** Menu - Restaurants ***************-->
+  <main>
+    <!--*** Background - Image ***-->
+    <section>
+      <img class="background" src="../assets/images/restaurants/la_palette_du_gout.jpg"
+        alt="Présentation d'un plat du restaurant La palette du goût">
+    </section>
+
+    <!--*** Title + Heart ***-->
+    <section class="menu">
+
+      <div class="menu__title">
+        <h1 class="menu__heading">La palette du goût</h1>
+        <!-- Bouton de favori -->
+        <input type="checkbox" id="heartCheckboxA" class="heart-checkbox">
+        <label for="heartCheckboxA" class="heart-label">
+          <i class="fa-regular fa-heart heart--regular"></i>
+          <i class="fa-solid fa-heart heart--solid"></i>
+        </label>
+      </div>
+      <!--*** Formulaire ***-->
+
+    </section>
+  </main>
+
+  <!--*************** Footer ***************-->
+  <footer class="footer">
+    <a href="../index.html" class="logo item1">Ohmyfood</a>
+    <ul class="item2">
+      <li><a class="footer__link footer__link--semi-bold" href="#">
+          <i class="fa-solid fa-utensils fa-fw fa-xs"></i>
+          <span>Proposer un restaurant</span>
+        </a></li>
+      <li><a class="footer__link footer__link--semi-bold" href="#">
+          <i class="fa-solid fa-handshake-angle fa-fw fa-xs"></i>
+          <span>Devenir partenaire</span>
+        </a></li>
+    </ul>
+    <ul class="item3">
+      <li><a class="footer__link footer__link--alt-size" href="#">Mentions légales</a></li>
+      <li><a class="footer__link footer__link--alt-size" href="mailto:contact@ohmyfood.com">
+          Contact
+        </a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
