@@ -513,8 +513,7 @@ input:checked + label .heart--solid {
   font-weight: 700;
   font-size: 15px;
 }
-
-.button-style {
+.menu__form .button-style {
   display: flex;
   flex-direction: initial;
   justify-content: center;
