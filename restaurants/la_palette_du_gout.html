@@ -44,8 +44,8 @@
     <!--*** Title + Heart ***-->
     <section class="menu">
 
-      <div class="menu__title">
-        <h1 class="menu__heading">La palette du goût</h1>
+      <div class="menu__header">
+        <h1 class="menu__title">La palette du goût</h1>
         <!-- Bouton de favori -->
         <input type="checkbox" id="heartCheckboxA" class="heart-checkbox">
         <label for="heartCheckboxA" class="heart-label">
@@ -53,7 +53,124 @@
           <i class="fa-solid fa-heart heart--solid"></i>
         </label>
       </div>
+
       <!--*** Formulaire ***-->
+      <form class="menu__form" method="get" action="#">
+        <!-- ENTRÉES -->
+        <h2 class="menu__category">ENTRÉES</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Fricassée d'escargots</span>
+              <p class="menucard__text">Au piment d'Espelette</p>
+            </span>
+            <span class="menucard__price">25€</span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Foie gras de canard mi-cuit</span>
+              <p class="menucard__text">Et ses copeaux de truffe noire</p>
+            </span>
+            <span class="menucard__price">35€</span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Œuf au plat</span>
+              <p class="menucard__text">Assaisonné à la truffe sur lit de caviar</p>
+            </span>
+            <span class="menucard__price">20€</span>
+          </label>
+        </div>
+
+        <!-- PLATS -->
+        <h2 class="menu__category">PLATS</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Filet de bœuf aux herbes</span>
+              <p class="menucard__text">Accompagné de sa ribambelle de légumes</p>
+            </span>
+            <span class="menucard__price">40€</span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Parmentier de queue de bœuf</span>
+              <p class="menucard__text">À la truffe noire sur sa purée de panais</p>
+            </span>
+            <span class="menucard__price">35€</span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Filet de turbot</span>
+              <p class="menucard__text">Aux agrumes</p>
+            </span>
+            <span class="menucard__price">44€</span>
+          </label>
+        </div>
+
+        <!-- DESSERTS -->
+        <h2 class="menu__category">DESSERTS</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Paris-Brest</span>
+              <p class="menucard__text">Revisité</p>
+            </span>
+            <span class="menucard__price">18€</span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Macaron au chocolat d'exception</span>
+              <p class="menucard__text">Et glace à la vanille de Madagascar</p>
+            </span>
+            <span class="menucard__price">22€</span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Mousse au chocolat </span>
+              <p class="menucard__text">Au piment d'Espelette et à la truffe noire</p>
+            </span>
+            <span class="menucard__price">23€</span>
+          </label>
+        </div>
+        <a href="#" class="button-style">Commander</a>
+      </form>
 
     </section>
   </main>

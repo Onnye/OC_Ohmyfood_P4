@@ -1,0 +1,78 @@
+.menu__form {
+  @include flex($direction: column, $gap: 10px);
+
+  .menu__category {
+    font-size: 16px;
+    font-weight: 300;
+    height: 27px;
+    position: relative;
+    margin-top: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      left: 0px;
+      bottom: 0px;
+      height: 3px;
+      background: $color--tertiary;
+    }
+  }
+
+  .menu__list {
+    @include flex($direction: column, $gap: 12px);
+
+    .menucard {
+      @include flex($justify: space-between, $align: center);
+      background-color: white;
+      @include shadow;
+      position: relative;
+      overflow: hidden;
+      height: 70px;
+      border-radius: 15px;
+      padding: 0 15px;
+
+      &__checkbox {
+        display: none;
+      }
+
+      &__content {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .menucard__title {
+          font-size: 18px;
+          font-weight: 700;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .menucard__text {
+          font-size: 15px;
+          font-weight: 300;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &__price {
+        display: flex;
+        align-self: flex-end;
+        padding-bottom: 15px;
+        font-weight: 700;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.button-style {
+  @include flex($justify: center, $align: center);
+  align-self: center;
+  width: 186px;
+  height: 50px;
+  margin: 40px 0 8px;
+}
