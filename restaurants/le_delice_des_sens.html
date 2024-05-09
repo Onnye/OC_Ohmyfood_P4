@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--*************** Head - meta - link ***************-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohmyfood - Réservez le menu qui vous convient sur Paris</title>
+  <meta name="description"
+    content="Réservez le menu qui vous convient sur Paris avec Ohmyfood. Découvrez des restaurants d’exception, sélectionnés par nos soins.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7ec55255d7.js" crossorigin="anonymous"></script>
+  <!-- Importations CSS -->
+  <link rel="stylesheet" href="../assets/CSS/style.css">
+</head>
+
+<!--*************** Body ***************-->
+
+<body>
+
+  <!--*************** Header ***************-->
+  <header>
+    <a href="../index.html" class="return"><i class="fa-solid fa-arrow-left"></i></a>
+    <img class="logo" src="../assets/images/logo/ohmyfood.png" alt="Logo du site Ohmyfood">
+  </header>
+
+  <!--*************** Menu - Restaurants ***************-->
+  <main>
+    <!--*** Background - Image ***-->
+    <div>
+      <img class="background" src="../assets/images/restaurants/le_delice_des_sens.jpg"
+        alt="Présentation d'un plat du restaurant Le délice des sens">
+    </div>
+
+    <!--*** Title + Heart ***-->
+    <section class="menu">
+
+      <div class="menu__header">
+        <h1 class="menu__title">Le délice des sens</h1>
+        <!-- Bouton de favori -->
+        <input type="checkbox" id="heartCheckboxA" class="heart-checkbox">
+        <label for="heartCheckboxA" class="heart-label">
+          <i class="fa-regular fa-heart heart--regular"></i>
+          <i class="fa-solid fa-heart heart--solid"></i>
+        </label>
+      </div>
+
+      <!--*** Formulaire ***-->
+      <form class="menu__form" method="get" action="#">
+        <!-- ENTRÉES -->
+        <h2 class="menu__category">ENTRÉES</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Tartare de thon</span>
+              <span class="menucard__text">Assaisonné au yuzu</span>
+            </span>
+            <span class="menucard__price">25€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Bouchée de homard croustillant </span>
+              <span class="menucard__text">Et sa farandole de petits légumes</span>
+            </span>
+            <span class="menucard__price">35€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Velouté de cèpes </span>
+              <span class="menucard__text">Aux truffes</span>
+            </span>
+            <span class="menucard__price">20€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- PLATS -->
+        <h2 class="menu__category">PLATS</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Poulet rôti aux herbes de Provence</span>
+              <span class="menucard__text">Et sa crème de truffe</span>
+            </span>
+            <span class="menucard__price">40€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Langouste rôtie </span>
+              <span class="menucard__text">Et ses légumes de saison</span>
+            </span>
+            <span class="menucard__price">35€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Côte de bœuf Angus </span>
+              <span class="menucard__text">Et sa purée de panais</span>
+            </span>
+            <span class="menucard__price">44€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- DESSERTS -->
+        <h2 class="menu__category">DESSERTS</h2>
+        <!-- Choix 1 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Farandole de desserts</span>
+              <span class="menucard__text">Du chef</span>
+            </span>
+            <span class="menucard__price">18€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 2 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Crème brulée </span>
+              <span class="menucard__text">Revisité</span>
+            </span>
+            <span class="menucard__price">22€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Choix 3 -->
+        <div class="menu__list">
+          <label class="menucard">
+            <input class="menucard__checkbox" type="checkbox">
+            <span class="menucard__content">
+              <span class="menucard__title">Tiramisu</span>
+              <span class="menucard__text">À la noisette</span>
+            </span>
+            <span class="menucard__price">23€</span>
+            <span class="menucard__check">
+              <span class="fa-solid fa-check-circle"></span>
+            </span>
+          </label>
+        </div>
+        <a href="#" class="button-style">Commander</a>
+      </form>
+
+    </section>
+  </main>
+
+  <!--*************** Footer ***************-->
+  <footer class="footer">
+    <a href="../index.html" class="logo item1">Ohmyfood</a>
+    <ul class="item2">
+      <li><a class="footer__link footer__link--semi-bold" href="#">
+          <i class="fa-solid fa-utensils fa-fw fa-xs"></i>
+          <span>Proposer un restaurant</span>
+        </a></li>
+      <li><a class="footer__link footer__link--semi-bold" href="#">
+          <i class="fa-solid fa-handshake-angle fa-fw fa-xs"></i>
+          <span>Devenir partenaire</span>
+        </a></li>
+    </ul>
+    <ul class="item3">
+      <li><a class="footer__link footer__link--alt-size" href="#">Mentions légales</a></li>
+      <li><a class="footer__link footer__link--alt-size" href="mailto:contact@ohmyfood.com">
+          Contact
+        </a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

@@ -74,14 +74,24 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        right: -70px;
-        width: 70px;
+        right: -$menucard-width;
+        width: $menucard-width;
         transition: transform 300ms ease-in-out;
 
         .fa-check-circle {
           font-size: 20px;
         }
       }
+    }
+
+    // For Input check
+    input:checked ~ .menucard__check {
+      transform: translateX(-$menucard-width);
+    }
+
+    // For Price deplacement
+    input:checked ~ .menucard__price {
+      margin-right: $menucard-width;
     }
   }
 
@@ -92,14 +102,4 @@
     height: 50px;
     margin: 40px 0 8px;
   }
-}
-
-/*** For Input check ***/
-.menucard input:checked ~ .menucard__check {
-  transform: translateX(-70px);
-}
-
-/**** For Price deplacement ***/
-.menucard input:checked ~ .menucard__price {
-  margin-right: 70px;
 }
