@@ -519,6 +519,26 @@ input:checked + label .heart--solid {
   padding-bottom: 15px;
   font-weight: 700;
   font-size: 15px;
+  transition: margin 300ms ease-in-out;
+}
+.menu__form .menu__list .menucard__check {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  text-align: initial;
+  gap: initial;
+  background: #99e2d0;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -70px;
+  width: 70px;
+  transition: transform 300ms ease-in-out;
+}
+.menu__form .menu__list .menucard__check .fa-check-circle {
+  font-size: 20px;
 }
 .menu__form .button-style {
   display: flex;
@@ -531,6 +551,16 @@ input:checked + label .heart--solid {
   width: 186px;
   height: 50px;
   margin: 40px 0 8px;
+}
+
+/*** For Input check ***/
+.menucard input:checked ~ .menucard__check {
+  transform: translateX(-70px);
+}
+
+/**** For Price deplacement ***/
+.menucard input:checked ~ .menucard__price {
+  margin-right: 70px;
 }
 
 /*========== General ==========*/
