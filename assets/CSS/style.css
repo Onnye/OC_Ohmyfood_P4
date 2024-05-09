@@ -2,6 +2,7 @@
 /*========== Variables ==========*/
 /*** Colors ***/
 /*** Font ***/
+/*** Size - Menu ***/
 /*========== Typography ==========*/
 /*========== Style Format ==========*/
 /*========== Color Format ==========*/
@@ -540,6 +541,12 @@ input:checked + label .heart--solid {
 .menu__form .menu__list .menucard__check .fa-check-circle {
   font-size: 20px;
 }
+.menu__form .menu__list input:checked ~ .menucard__check {
+  transform: translateX(-70px);
+}
+.menu__form .menu__list input:checked ~ .menucard__price {
+  margin-right: 70px;
+}
 .menu__form .button-style {
   display: flex;
   flex-direction: initial;
@@ -553,21 +560,12 @@ input:checked + label .heart--solid {
   margin: 40px 0 8px;
 }
 
-/*** For Input check ***/
-.menucard input:checked ~ .menucard__check {
-  transform: translateX(-70px);
-}
-
-/**** For Price deplacement ***/
-.menucard input:checked ~ .menucard__price {
-  margin-right: 70px;
-}
-
 /*========== General ==========*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -703,7 +701,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: 30px;
+  text-align: initial;
   gap: initial;
   background-color: #f6f6f6;
   padding: 48px 20px 48px 20px;
@@ -734,7 +732,7 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: 18px;
+  text-align: initial;
   gap: initial;
   flex-wrap: wrap;
   width: 100%;
