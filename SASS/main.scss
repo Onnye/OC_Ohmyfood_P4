@@ -125,6 +125,10 @@ input {
     width: 100%;
     max-width: 1080px;
 
+    @include tablet {
+      gap: 20px;
+    }
+
     @include desktop {
       justify-content: space-between;
       gap: 30px;
@@ -133,8 +137,12 @@ input {
 
   &__card-link {
     width: 100%;
-    position: relative; // Badge "Nouveau" + coeur
+    position: relative; // Position relative pour positionner éléments enfants de manière absolue - Badge "Nouveau" + coeur
     margin-bottom: 20px;
+
+    @include tablet {
+      width: calc((100% - 20px) / 2);
+    }
 
     @include desktop {
       width: calc((100% - 50px) / 2);
