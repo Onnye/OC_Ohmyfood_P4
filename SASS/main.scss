@@ -133,7 +133,7 @@ input {
 
   &__card-link {
     width: 100%;
-    position: relative; // Badge "Nouveau"
+    position: relative; // Badge "Nouveau" + coeur
     margin-bottom: 20px;
 
     @include desktop {

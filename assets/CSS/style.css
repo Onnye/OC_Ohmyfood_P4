@@ -81,7 +81,7 @@ header img {
   padding: 14px 0;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header img {
     margin: 15px 0;
   }
@@ -100,7 +100,7 @@ header img {
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .location {
     box-shadow: none;
   }
@@ -145,7 +145,7 @@ header .return i {
   text-align: initial;
   gap: initial;
   color: white;
-  padding: 22px 25px 22px 25px;
+  padding: 22px 25px;
   background: #353535;
 }
 @media (min-width: 768px) {
@@ -155,6 +155,19 @@ header .return i {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: initial;
+    gap: initial;
+    gap: 30px;
+    height: 114px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: initial;
+    gap: initial;
     gap: 40px;
     height: 114px;
   }
@@ -172,9 +185,12 @@ header .return i {
 }
 @media (min-width: 768px) {
   .footer .logo {
-    margin-left: 60px;
-    margin-bottom: 10px;
-    margin-right: 40px;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .logo {
+    margin: 0 40px 10px 60px;
   }
 }
 .footer ul {
@@ -184,6 +200,11 @@ header .return i {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
+  .footer ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
   .footer ul {
     flex-direction: row;
   }
@@ -218,12 +239,27 @@ header .return i {
     order: 3;
   }
 }
+@media (min-width: 1024px) {
+  .footer .item1 {
+    order: 3;
+  }
+}
 @media (min-width: 768px) {
   .footer .item2 {
     order: 1;
   }
 }
+@media (min-width: 1024px) {
+  .footer .item2 {
+    order: 1;
+  }
+}
 @media (min-width: 768px) {
+  .footer .item3 {
+    order: 2;
+  }
+}
+@media (min-width: 1024px) {
   .footer .item3 {
     order: 2;
   }
@@ -246,7 +282,7 @@ header .return i {
   padding: 13px 19px 13px 19px;
   border-radius: 25px;
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .button-style:hover {
   filter: brightness(110%);
@@ -265,7 +301,7 @@ header .return i {
   width: 100%;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .guide__item {
     width: 100%;
     max-width: 335px;
@@ -374,6 +410,7 @@ header .return i {
   background-clip: text;
   color: transparent;
   opacity: 0;
+  transition: opacity 1.5s ease;
 }
 
 .heart-checkbox {
@@ -407,7 +444,7 @@ input:checked + label .heart--solid {
   margin: -50px 0 0 0;
   padding: 32px 17px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .menu {
     max-width: 1055px;
     margin: -50px auto 0 auto;
@@ -648,7 +685,7 @@ input {
   padding: 0 0 60px 0;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .reservation {
     padding: 0 0 35px 0;
   }
@@ -667,7 +704,7 @@ input {
   padding: 30px 50px 18px 50px;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .reservation .reservation__title {
     font-size: 40px;
     padding-bottom: 30px;
@@ -697,7 +734,7 @@ input {
   padding: 48px 20px 68px 20px;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .guide {
     display: flex;
     flex-direction: column;
@@ -715,7 +752,7 @@ input {
   color: #000;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .guide__title {
     width: 100%;
     max-width: 1080px;
@@ -731,7 +768,7 @@ input {
   font-weight: 500;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .guide__list {
     display: flex;
     flex-direction: row;
@@ -754,7 +791,7 @@ input {
   background-color: #f6f6f6;
   padding: 48px 20px 48px 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurants {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -770,7 +807,7 @@ input {
   margin-bottom: 20px;
   /* Media Queries */
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurants__title {
     padding-bottom: 10px;
   }
@@ -786,7 +823,7 @@ input {
   width: 100%;
   max-width: 1080px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurants__cards-container {
     justify-content: space-between;
     gap: 30px;
@@ -797,7 +834,7 @@ input {
   position: relative;
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurants__card-link {
     width: calc((100% - 50px) / 2);
     max-width: 490px;

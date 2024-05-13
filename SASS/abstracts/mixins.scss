@@ -46,6 +46,10 @@
   gap: $gap;
 }
 
+@mixin footer-layout {
+  @include flex($direction: row, $justify: flex-end, $align: flex-end);
+}
+
 /*========== Color Format ==========*/
 
 @mixin linear-gradient() {
@@ -58,6 +62,12 @@
 
 /*========== Media queries ==========*/
 @mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
   @media (min-width: 768px) {
     @content;
   }
