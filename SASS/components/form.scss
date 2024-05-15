@@ -9,8 +9,8 @@
     margin-top: 40px;
 
     &::after {
-      content: "";
-      position: absolute;
+      content: ""; // Contenu vide pour créer un élément décoratif
+      position: absolute; // Position absolue par rapport à l'élément parent
       width: 40px;
       left: 0px;
       bottom: 0px;
@@ -27,7 +27,7 @@
       background-color: white;
       @include shadow;
       position: relative;
-      overflow: hidden;
+      overflow: hidden; // Masquage du contenu débordant
       height: 70px;
       border-radius: 15px;
       padding: 0 15px;
@@ -37,17 +37,16 @@
       }
 
       &__content {
-        display: flex;
+        @include flex($gap: 5px);
         flex-flow: column nowrap;
-        gap: 5px;
         overflow: hidden;
         white-space: nowrap;
 
         .menucard__title {
           font-size: 18px;
           font-weight: 700;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          overflow: hidden; // Masquage du contenu débordant
+          text-overflow: ellipsis; // Troncature du texte débordant avec des points de suspension
         }
 
         .menucard__text {
@@ -71,7 +70,7 @@
         @include flex($justify: center, $align: center);
         background: $color--tertiary;
         color: white;
-        position: absolute;
+        position: absolute; // Position absolue par rapport à l'élément parent
         top: 0;
         bottom: 0;
         right: -$menucard-width;
@@ -104,6 +103,7 @@
   }
 }
 
+// Animation pour chaque élément de la liste de menu
 .menu__list {
   opacity: 0;
   $max-items: 12;
@@ -113,7 +113,7 @@
       animation: fade-in 0.3s ease forwards ($i * 0.3s);
     }
   }
-
+  // Keyframes pour l'animation de fondu
   @keyframes fade-in {
     0% {
       opacity: 0;

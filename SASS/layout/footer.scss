@@ -4,12 +4,12 @@
   padding: 22px 25px;
   background: $color-background-footer;
 
+  /* Media Queries */
   @include tablet {
     @include footer-layout;
     gap: 30px;
     height: 114px;
   }
-
   @include desktop {
     @include footer-layout;
     gap: 40px;
@@ -22,33 +22,29 @@
     font-family: $title-font;
     font-size: 18px;
 
+    /* Media Queries */
     @include tablet {
       margin-bottom: 5px;
     }
-
     @include desktop {
       margin: 0 40px 10px 60px;
     }
   }
 
   ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    @include flex($direction: column, $gap: 10px);
     margin-bottom: 10px;
 
+    /* Media Queries */
     @include tablet {
       flex-direction: row;
     }
-
     @include desktop {
       flex-direction: row;
     }
 
     li {
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      @include flex($align: center, $gap: 5px);
     }
   }
 
@@ -65,11 +61,11 @@
     }
   }
 
+  /* Media Queries */
   .item1 {
     @include tablet {
       order: 3;
     }
-
     @include desktop {
       order: 3;
     }
@@ -79,7 +75,6 @@
     @include tablet {
       order: 1;
     }
-
     @include desktop {
       order: 1;
     }
@@ -89,7 +84,6 @@
     @include tablet {
       order: 2;
     }
-
     @include desktop {
       order: 2;
     }

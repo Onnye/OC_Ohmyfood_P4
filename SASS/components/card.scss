@@ -8,7 +8,7 @@
   &--new {
     &:before {
       content: "Nouveau";
-      position: absolute;
+      position: absolute; // Position absolue par rapport au conteneur
       right: 5%;
       top: 5%;
       width: 80px;
@@ -34,9 +34,9 @@
   }
 }
 
-// Heart styles outside .card
+// Animation de cœur
 .heart-label {
-  position: absolute;
+  position: absolute; // Position absolue par rapport au parent
   bottom: 30px;
   right: 23px;
   cursor: pointer;
@@ -49,8 +49,7 @@
   .heart--regular {
     display: flex;
     font-size: 22px;
-    position: absolute;
-    transform-origin: center bottom;
+    position: absolute; // Position absolue par rapport au parent
     transition: opacity 600ms;
     opacity: 1;
   }

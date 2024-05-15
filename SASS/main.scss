@@ -1,6 +1,6 @@
 /*========== Imports ==========*/
-@import "./abstracts/variables.scss";
-@import "./abstracts/mixins.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 @import "./components/loader.scss";
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
@@ -43,6 +43,7 @@ input {
   background: $background;
   @include flex($direction: column, $justify: center, $align: center);
   padding: 0 0 60px 0;
+
   /* Media Queries */
   @include desktop {
     padding: 0 0 35px 0;
@@ -51,6 +52,7 @@ input {
   .reservation__title {
     @include flex($text: center);
     @include mixin-h1;
+
     /* Media Queries */
     @include desktop {
       font-size: 40px;
@@ -71,6 +73,7 @@ input {
 .guide {
   @include flex($direction: column, $gap: 26px);
   padding: 48px 20px 68px 20px;
+
   /* Media Queries */
   @include desktop {
     @include flex($direction: column, $align: center, $gap: 25px);
@@ -79,6 +82,7 @@ input {
 
   &__title {
     @include mixin-h2;
+
     /* Media Queries */
     @include desktop {
       width: 100%;
@@ -89,6 +93,7 @@ input {
   &__list {
     @include flex($direction: column, $gap: 25px);
     font-weight: 500;
+
     /* Media Queries */
     @include desktop {
       @include flex($direction: row, $justify: center, $gap: 40px);
@@ -103,6 +108,7 @@ input {
   background-color: $background;
   padding: 48px 20px 48px 20px;
 
+  /* Media Queries */
   @include desktop {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -113,6 +119,7 @@ input {
     max-width: 1080px;
     @include mixin-h2;
     margin-bottom: 20px;
+
     /* Media Queries */
     @include desktop {
       padding-bottom: 10px;
@@ -125,10 +132,10 @@ input {
     width: 100%;
     max-width: 1080px;
 
+    /* Media Queries */
     @include tablet {
       gap: 20px;
     }
-
     @include desktop {
       justify-content: space-between;
       gap: 30px;
@@ -140,10 +147,10 @@ input {
     position: relative; // Position relative pour positionner éléments enfants de manière absolue - Badge "Nouveau" + coeur
     margin-bottom: 20px;
 
+    /* Media Queries */
     @include tablet {
       width: calc((100% - 20px) / 2);
     }
-
     @include desktop {
       width: calc((100% - 50px) / 2);
       max-width: 490px;
